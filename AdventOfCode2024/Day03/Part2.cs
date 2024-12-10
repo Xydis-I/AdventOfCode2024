@@ -40,14 +40,11 @@ namespace AdventOfCode2024.Day03
                         isMul = false;
                     }
 
-
                     if (!isDisabled && isMul)
-                    {
                         total += int.Parse(instruction.Groups[2].Value) * int.Parse(instruction.Groups[4].Value);
-                    }
                 }
 
-                Console.WriteLine("Day02_Part1 Answer: " + total);
+                Console.WriteLine("Day03_Part1 Answer: " + total);
             }
             catch (Exception e)
             {

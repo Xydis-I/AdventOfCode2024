@@ -23,9 +23,7 @@
                     for (int i = 1; i < numbers.Count && isSafe; i++)
                     {
                         if (lastNum == numbers[i])
-                        {
                             isSafe = false;
-                        }
 
                         var change = lastNum - numbers[i];
 
@@ -33,25 +31,19 @@
                         isIncreasing ??= change < 0;
 
                         if (isIncreasing != change < 0)
-                        {
                             isSafe = false;
-                        }
 
                         change = (int)MathF.Abs(change);
 
                         if (change > 3)
-                        {
                             isSafe = false;
-                        }
 
 
                         lastNum = numbers[i];
                     }
 
                     if (isSafe)
-                    {
                         total++;
-                    }
 
                     else
                     {
@@ -67,9 +59,7 @@
                             for (int j = 1; j < newNumbers.Count && isSafe; j++)
                             {
                                 if (lastNum == newNumbers[j])
-                                {
                                     isSafe = false;
-                                }
 
                                 var change = lastNum - newNumbers[j];
 
@@ -77,16 +67,12 @@
                                 isIncreasing ??= change < 0;
 
                                 if (isIncreasing != change < 0)
-                                {
                                     isSafe = false;
-                                }
 
                                 change = (int)MathF.Abs(change);
 
                                 if (change > 3)
-                                {
                                     isSafe = false;
-                                }
 
 
                                 lastNum = newNumbers[j];
