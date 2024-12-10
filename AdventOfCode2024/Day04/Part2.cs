@@ -13,6 +13,22 @@
 
                 var total = 0;
 
+                for (int i = 0; i < lines.Length - 2; i++)
+                    for (int j = 0; j < lines.Length - 2; j++)
+                        if (lines[i + 1][j + 1] == 'A')
+                        {
+                            if (lines[i][j] == 'M' && lines[i + 2][j + 2] == 'S' && lines[i + 2][j] == 'M' && lines[i][j + 2] == 'S')
+                                total++;
+
+                            if (lines[i][j] == 'M' && lines[i + 2][j + 2] == 'S' && lines[i + 2][j] == 'S' && lines[i][j + 2] == 'M')
+                                total++;
+
+                            if (lines[i][j] == 'S' && lines[i + 2][j + 2] == 'M' && lines[i + 2][j] == 'S' && lines[i][j + 2] == 'M')
+                                total++;
+
+                            if (lines[i][j] == 'S' && lines[i + 2][j + 2] == 'M' && lines[i + 2][j] == 'M' && lines[i][j + 2] == 'S')
+                                total++;
+                        }
 
 
                 Console.WriteLine("Day04_Part2 Answer: " + total);
