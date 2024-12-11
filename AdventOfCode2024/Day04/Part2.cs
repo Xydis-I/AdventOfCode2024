@@ -30,7 +30,6 @@
                                 total++;
                         }
 
-
                 Console.WriteLine("Day04_Part2 Answer: " + total);
             }
             catch (Exception e)
