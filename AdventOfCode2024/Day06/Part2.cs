@@ -36,8 +36,6 @@
                 {
                     while (true)
                     {
-                        var lastPosition = guardPosition;
-
                         if (map[guardPosition.Item1, guardPosition.Item2] == '^')
                         {
                             if (map[guardPosition.Item1 - 1, guardPosition.Item2] != '#')
@@ -174,7 +172,7 @@
                     }
                 }
 
-                Console.WriteLine("Day05_Part2 Answer: " + total);
+                Console.WriteLine("Day06_Part2 Answer: " + total);
             }
             catch (Exception e)
             {

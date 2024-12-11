@@ -111,7 +111,7 @@
                                 total++;
                 }
 
-                Console.WriteLine("Day05_Part1 Answer: " + total);
+                Console.WriteLine("Day06_Part1 Answer: " + total);
             }
             catch (Exception e)
             {
