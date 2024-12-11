@@ -94,7 +94,9 @@
                     for (int i = 0; i < mapSize; i++)
                         for (int j = 0; j < mapSize; j++)
                             if (map[i, j] == 'X')
+                            {
                                 pathPositions.Add((i, j));
+                            }
                 }
 
                 pathPositions.Remove(guardStartingPosition);
