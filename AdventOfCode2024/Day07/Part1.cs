@@ -11,7 +11,6 @@
                 using var input = new StreamReader(FileLocation);
                 var lines = input.ReadToEnd().Split("\r\n").ToList();
 
-                var isValid = true;
                 ulong total = 0;
 
                 foreach (var line in lines)
@@ -43,7 +42,6 @@
                         }
                     }
                 }
-
 
                 Console.WriteLine("Day07_Part1 Answer: " + total);
             }

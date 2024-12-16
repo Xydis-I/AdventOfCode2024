@@ -32,3 +32,8 @@ Console.WriteLine("Day 07 Answers");
 AdventOfCode2024.Day07.Part1.Solution();
 AdventOfCode2024.Day07.Part2.Solution();
 Console.WriteLine();
+
+Console.WriteLine("Day 08 Answers");
+AdventOfCode2024.Day08.Part1.Solution();
+AdventOfCode2024.Day08.Part2.Solution();
+Console.WriteLine();
